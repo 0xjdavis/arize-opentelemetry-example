@@ -17,7 +17,7 @@ if not (openai_api_key := st.secrets["openai_key"]):
 OPENAI_API_KEY = st.secrets["openai_key"]
 
 st.title("Arize OpenTelemetry Example")
-st.subtitle("WIP")
+st.caption("WIP")
 file_system = GCSFileSystem(project="public-assets-275721")
 index_path = "arize-phoenix-assets/datasets/unstructured/llm/llama-index/arize-docs/index/"
 storage_context = StorageContext.from_defaults(
