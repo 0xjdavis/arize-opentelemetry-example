@@ -1,1 +1,6 @@
 streamlit
+getpass
+gcsfs
+llama_index.core
+llama_index.embeddings.openai
+llama_index.llms.openai
