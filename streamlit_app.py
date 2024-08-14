@@ -11,7 +11,7 @@ from llama_index.core import (
 from llama_index.embeddings.openai import OpenAIEmbedding
 from llama_index.llms.openai import OpenAI
 
-if not (openai_api_key := os.getenv("OPENAI_API_KEY")):
+if not (openai_api_key := st.secrets["openai_key"]):
     openai_api_key = getpass("🔑 Enter your OpenAI API key: ")
 
 OPENAI_API_KEY = st.secrets["openai_key"]
